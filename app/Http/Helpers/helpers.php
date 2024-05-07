@@ -297,8 +297,8 @@ function create_tellbot_order($service, $price, $cost){
          $ver->order_id = $id;
          $ver->country = $state;
          $ver->service = $service;
-         $ver->cost = $price;
-         $ver->api_cost = $cost;
+         $ver->cost = $cost;
+         $ver->api_cost = $price;
          $ver->status = 1;
          $ver->type = 'tella';
          $ver->save();

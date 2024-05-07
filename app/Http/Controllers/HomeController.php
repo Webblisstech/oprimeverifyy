@@ -41,7 +41,7 @@ class HomeController extends Controller
         $data['margin'] = Setting::where('id', 1)->first()->margin;
         $data['margin2'] = Setting::where('id', 1)->first()->margin_2;
 
-        $data['verification'] = Verification::where('user_id', Auth::id())->paginate('10');
+        $data['verification'] = Verification::latest()->where('user_id', Auth::id())->paginate('10');
 
 
         $data['order'] = 0;

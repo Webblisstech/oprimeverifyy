@@ -34,7 +34,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-
+    @livewireStyles
 
 
 
@@ -466,7 +466,7 @@
             <p>2024 OPRIME VERIFY</p>
         </footer>
     </div>
-
+@livewireScripts
 
 </body>
 
